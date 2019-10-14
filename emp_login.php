@@ -5,8 +5,22 @@
         <meta charset="UTF-16le">
         <title> SMN Tech | Log in</title>
         <link rel="stylesheet" href="css/login_form.css">
+        <link rel="stylesheet" href="css/navbar.css">
     </head>
     <body>
+        <div class="top_nav">
+            <div id='logo'>
+                <a href=""> SMN TECH</a>
+            </div>            
+            <ul>
+                <li> <a href=""> Sign in </a> </li>
+                 <li> <a href=""> Messages </a> </li>
+                  <li> <a href=""> Products </a> </li>
+                   <li> <a href=""> Orders </a> </li>
+                    <li> <a href=""> Home </a> </li>                    
+            </ul>
+        </div>
+        
         <div class="login">
             
             <form action="" method="POST">
@@ -79,7 +93,6 @@
             
     
         }
-
            
         if (isset($_POST['submit'])){
         $Username = filter_input(INPUT_POST, 'usrnm'); 		// inputs username
@@ -90,7 +103,6 @@
                 echo 'User doesn\'t exist. Please sign up first';
             }
         }
-
     ?>
         <div class="login_msg">
             
