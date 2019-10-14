@@ -13,11 +13,11 @@
                 <a href=""> SMN TECH</a>
             </div>            
             <ul>
-                <li> <a href=""> Sign in </a> </li>
+                <li class="active"> <a href="emp_login.php"> Sign in </a> </li>
                  <li> <a href=""> Messages </a> </li>
                   <li> <a href=""> Products </a> </li>
                    <li> <a href=""> Orders </a> </li>
-                    <li> <a href=""> Home </a> </li>                    
+                   <li> <a href="emp_homepage.php"> Home </a> </li>                    
             </ul>
         </div>
         
@@ -51,7 +51,7 @@
         </div>
     <?php     
         
-        
+        include ('jsHandler.php');
         /* @param $username is email or username
          * 
          */         
@@ -84,11 +84,15 @@
                     $_SESSION['user_id'] = $user['user_id'];
                     $_SESSION['password'] = $user['password'];
                     
-                    print_r($_SESSION);
+                    // print_r($_SESSION);
                     //print_r("SESSION ID: " .session_status());
+                    echo "HELLO". $_SESSION['user_id']. ", Please refer to <a href='emp_homepage.php'> this page </a> to continue ";
+                    showAlert("You are now logged in !");
+                    redirectToHome();
+;
                     
                 } else{
-                    echo 'WRONG PASSWORD';
+                    showAlert("Wrong Password!");
                 }
             
     
@@ -100,7 +104,7 @@
             if (userExists($Username)){
                 verifyUser($Username, $Password);  
             } else {
-                echo 'User doesn\'t exist. Please sign up first';
+                showAlert("User doesn\'t exist.\\nPlease Sign Up first.");
             }
         }
     ?>
