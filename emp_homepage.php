@@ -14,8 +14,8 @@
             <ul>
                 <li> <a href="emp_login.php"> Sign in </a> </li>
                  <li> <a href=""> Messages </a> </li>
-                  <li> <a href=""> Products </a> </li>
-                   <li> <a href=""> Orders </a> </li>
+                  <li> <a href="product_manager.php"> Products </a> </li>
+                   <li> <a href="manage_orders.php"> Orders </a> </li>
                    <li class="active"> <a href="emp_homepage.php"> Home </a> </li>                    
             </ul>
         </div>
