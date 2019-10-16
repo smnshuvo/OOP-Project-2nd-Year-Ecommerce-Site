@@ -57,7 +57,7 @@
          */         
         function userExists($username){
             include ('connect.php');
-            $SQL = "SELECT * FROM user_info WHERE username='$username' limit 1";
+            $SQL = "SELECT * FROM emp_info WHERE emp_username='$username' limit 1";
             // limit 1 will save some execution time
             $result = mysqli_query($cnct, $SQL);
             $row = mysqli_fetch_assoc($result);
@@ -73,16 +73,16 @@
             include ('connect.php');
             include ('session_manager.php');
             
-            $QUERY = "SELECT user_id,password from user_info WHERE "
-                    . "username='$Username' AND password='$Password' limit 1";
+            $QUERY = "SELECT emp_username,emp_password from emp_info WHERE "
+                    . "emp_username='$Username' AND emp_password='$Password' limit 1";
             $result = mysqli_query($cnct, $QUERY);
             $user = mysqli_fetch_assoc($result);
                 if ($user != null){
                     //printf("%s , %s\n" ,$user['user_id'], $user['password']);
                     // session_start(); // staring a session
                     start_session();                    
-                    $_SESSION['user_id'] = $user['user_id'];
-                    $_SESSION['password'] = $user['password'];
+                    $_SESSION['user'] = $user['emp_username'];
+                    $_SESSION['password'] = $user['emp_password'];
                     
                     // print_r($_SESSION);
                     //print_r("SESSION ID: " .session_status());
