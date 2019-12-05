@@ -3,12 +3,21 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/xampp/htdocs/2nd_year_project_ecommerce_site/showProductDetails.html</file>
             <file>file:/D:/xampp/htdocs/2nd_year_project_ecommerce_site/product.php</file>
             <file>file:/D:/xampp/htdocs/2nd_year_project_ecommerce_site/index.php</file>
-            <file>file:/D:/xampp/htdocs/2nd_year_project_ecommerce_site/css/productView.css</file>
-            <file>file:/D:/xampp/htdocs/2nd_year_project_ecommerce_site/productViewer.php</file>
+            <file>file:/D:/xampp/htdocs/2nd_year_project_ecommerce_site/objects/OrderLine.php</file>
+            <file>file:/D:/xampp/htdocs/2nd_year_project_ecommerce_site/objects/Order.php</file>
+            <file>file:/D:/xampp/htdocs/2nd_year_project_ecommerce_site/add_product.php</file>
             <file>file:/D:/xampp/htdocs/2nd_year_project_ecommerce_site/emp_login.php</file>
+            <file>file:/D:/xampp/htdocs/2nd_year_project_ecommerce_site/objects/Product.php</file>
+            <file>file:/D:/xampp/htdocs/2nd_year_project_ecommerce_site/css/productViewPage.css</file>
+            <file>file:/D:/xampp/htdocs/2nd_year_project_ecommerce_site/objects/User.php</file>
+            <file>file:/D:/xampp/htdocs/2nd_year_project_ecommerce_site/showProductDetails.html</file>
+            <file>file:/D:/xampp/htdocs/2nd_year_project_ecommerce_site/objects/Customer.php</file>
+            <file>file:/D:/xampp/htdocs/2nd_year_project_ecommerce_site/DatabaseJob.php</file>
+            <file>file:/D:/xampp/htdocs/2nd_year_project_ecommerce_site/objects/Employee.php</file>
+            <file>file:/D:/xampp/htdocs/2nd_year_project_ecommerce_site/objects/Payment.php</file>
+            <file>file:/D:/xampp/htdocs/2nd_year_project_ecommerce_site/connect.php</file>
         </group>
     </open-files>
 </project-private>
